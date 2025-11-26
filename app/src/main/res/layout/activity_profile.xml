@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ProfileActivity">
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_media_previous"
+        android:background="?attr/selectableItemBackgroundBorderless" />
+
+    <TextView
+        android:id="@+id/user_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="User Name"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/user_email_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="user@example.com"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/edit_profile_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"/>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/dark_mode_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dark Mode"
+        android:textSize="18sp"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/logout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"/>
+
+</LinearLayout>
