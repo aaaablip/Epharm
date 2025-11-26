@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    app:cardCornerRadius="8dp"
-    app:cardElevation="4dp">
+    app:cardBackgroundColor="@color/colorSurface"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4sp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorOnSurface"
         android:orientation="vertical"
         android:padding="16dp">
 
@@ -26,23 +29,29 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="Product Name"
-            android:textSize="16sp"
+            android:textColor="@color/colorOnSurface"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/product_price"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginTop="4dp"
             android:text="$99.99"
-            android:textColor="@color/material_dynamic_neutral0"
-            android:textSize="14sp" />
+            android:textAlignment="viewEnd"
+            android:textColor="@color/colorOnSurface"
+            android:textSize="32sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/add_to_cart_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Add to Cart" />
+            android:text="Add to Cart"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorSurface" />
+
     </LinearLayout>
 </androidx.cardview.widget.CardView>
